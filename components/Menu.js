@@ -5,13 +5,30 @@ import Link from 'next/link'
 
 export default function DropDown() {
     return (
-        <div className="menu fixed top-4 right-10 w-56 text-right z-50">
+
+            
+<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2 rounded dark:bg-gray-900">
+    <div className="p-4 menu sticky top-0 flex items-center justify-between" >
+            {/*Import pollen logo from public folder name is pollen_logo.svg*/}
+            <div className="flex items-center">
+                <Link href="/">
+                    <a className="flex items-center">
+                        <img
+                            src="/pollen_logo.svg"
+                            alt="Pollen Logo"
+                            className="h-8 w-8"
+                        />
+
+                    </a>
+                </Link>
+                
+            </div>
             <Menu as="div" className="relative inline-block text-left menu-bg">
                 <div>
-                    <Menu.Button className=" focus:outline-none inline-flex w-full justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-                        Explore
+                    <Menu.Button className=" focus:outline-none inline-flex w-full justify-center rounded-md bg-yellow-400 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                        Engineerd By Pollen
                         <ChevronDownIcon
-                            className="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
+                            className="ml-2 -mr-1 h-5 w-5"
                             aria-hidden="true"
                         />
                     </Menu.Button>
@@ -41,16 +58,10 @@ export default function DropDown() {
                     </Menu.Items>
                 </Transition>
             </Menu>
-            <style jsx>{`
-@media and (max-width: 768px) {
-.menu {
-    right: 5% !important;
-    text-align: right !important;
-}
+          </div>
+</nav>
 
-}
-  `}</style>
-        </div>
+
     )
 }
 

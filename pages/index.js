@@ -22,16 +22,20 @@ export default function Home() {
         <title>Landing Page</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='contain-all'>
-        <div>
-          <DropDown />
-        </div>
-        <div className="btn-contain">
-          <p className="btn-text" onClick={() => btnTrigger()}>Push this for<strong>&nbsp;Overlay</strong></p>
-        </div>
-        <div className="text-contain">
-          <p><span className="title-span">Introducing a new template for landing pages.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
+      <DropDown />
+      <main className='content-around'>
+ 
+
+
+          <div className="text-contain">
+            {/*Make the first pollen bolded and yellow in color */}
+            <p><span className="text-yellow-400 font-semibold">Pollen</span> is an organization of scientist, artists, engineers, and designers exploring the intersection of culture and science.</p>
+          </div>
+          
+          <div className="btn-contain">
+            <p className="btn-text" onClick={() => btnTrigger()}>Push this for<strong>&nbsp;Overlay</strong></p>
+          </div>
+
         <div id="revealContainer" className="reveal-container">
           <div className="text-contain reveal-text">
             <p>This is an overlay example with a video.  But anything can go here.</p>
