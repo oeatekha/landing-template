@@ -7,14 +7,14 @@ export default function DropDown() {
     return (
 
             
-<nav class="bg-white border-gray-200 sm:px-4 py-2 rounded dark:bg-gray-900">
-    <div class="p-4 menu sticky top-0 flex items-center justify-between" >
+<nav className="bg-white border-gray-200 sm:px-4 py-2 rounded dark:bg-gray-900">
+    <div className="p-4 menu sticky top-0 flex items-center justify-between" >
             {/*Import pollen logo from public folder name is pollen_logo.svg*/}
-            <div class="flex items-center">
+            <div className="flex items-center">
                 <Link href="/">
-                    <a class="flex items-center">
+                    <a className="flex items-center">
                
-                        <span class="text-xl font-bold ml-2 text-gray-800 dark:text-white">
+                        <span className="text-xl font-bold ml-2 text-gray-800 dark:text-white">
                             grdn
                         </span>
                     </a>
