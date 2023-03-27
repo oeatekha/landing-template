@@ -42,50 +42,50 @@ export default function Home() {
           
           <div className="btn-contain">
           <div
-        class="flex overflow-x-scroll pb-10 hide-scroll-bar"
+        className="flex overflow-x-scroll pb-10 hide-scroll-bar"
       >
         <div
-          class="flex flex-nowrap "
+          className="flex flex-nowrap "
         >
-            <div class="inline-block px-3">
-              <div class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image6.jpg')]">
+            <div className="inline-block px-3">
+              <div className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image6.jpg')]">
               </div>
             </div>
 
           
-          <div class="inline-block px-3">
+          <div className="inline-block px-3">
             <div
-            class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image11.jpg')]">
+            className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image11.jpg')]">
             </div>
           </div>
-          <div class="inline-block px-3">
+          <div className="inline-block px-3">
           <div
-            class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image3.jpg')]">
+            className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image3.jpg')]">
             </div>
           </div>
-          <div class="inline-block px-3">
+          <div className="inline-block px-3">
           <div
-            class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image4.jpg')]">
+            className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image4.jpg')]">
             </div>
           </div>
-          <div class="inline-block px-3">
+          <div className="inline-block px-3">
             <div
-              class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image2.jpg')]">
+              className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image2.jpg')]">
             </div>
           </div>
-          <div class="inline-block px-3">
+          <div className="inline-block px-3">
             <div
-              class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image8.jpg')]">
+              className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image8.jpg')]">
             </div>
           </div>
-          <div class="inline-block px-3">
+          <div className="inline-block px-3">
             <div
-              class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image9.jpg')]">
+              className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image9.jpg')]">
             </div>
           </div>
-          <div class="inline-block px-3">
+          <div className="inline-block px-3">
             <div
-              class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image10.jpg')]">
+              className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image10.jpg')]">
             </div>
           </div>
         </div>
