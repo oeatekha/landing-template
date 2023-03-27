@@ -14,7 +14,7 @@ export default function DropDown() {
                 <Link href="/">
                     <a className="flex items-center">
                
-                        <span className="text-xl font-bold ml-2 text-gray-800 dark:text-white">
+                        <span className="text-xl font-bold ml-2 text-gray-800">
                             grdn
                         </span>
                     </a>
