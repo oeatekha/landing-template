@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { Menu } from '@headlessui/react'
 import DropDown from '../components/Menu'
 import React, { useEffect } from "react";
-import Tippy from '@tippy.js/react';
 import Link from 'next/link'
 import Script from 'next/script'
 import Image from 'next/image'
@@ -17,87 +16,22 @@ export default function Home() {
     const btn = document.getElementById('revealContainer');
     btn.classList.toggle('active');
   }
-
-  // add tippy hover
-
-
-
-
   return (
     <div className="container">
       <Head>
         <title>Landing Page</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <DropDown />
-      <main className='content-around'>
- 
-
-
-          <div className="text-contain">
-            {/*Make the first pollen bolded and yellow in color */}
-            <p><span className="font-semibold">grdn</span> is digital infrastructure for socially created content, knowledge, and media.</p>
-          </div>
-
-          
-          <div className="btn-contain">
-          <div
-        className="flex overflow-x-scroll pb-10 hide-scroll-bar"
-      >
-        <div
-          className="flex flex-nowrap "
-        >
-            <div className="inline-block px-3">
-              <div className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image6.jpg')]">
-              </div>
-            </div>
-
-          
-          <div className="inline-block px-3">
-            <div
-            className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image11.jpg')]">
-            </div>
-          </div>
-          <div className="inline-block px-3">
-          <div
-            className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image3.jpg')]">
-            </div>
-          </div>
-          <div className="inline-block px-3">
-          <div
-            className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image4.jpg')]">
-            </div>
-          </div>
-          <div className="inline-block px-3">
-            <div
-              className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image2.jpg')]">
-            </div>
-          </div>
-          <div className="inline-block px-3">
-            <div
-              className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image8.jpg')]">
-            </div>
-          </div>
-          <div className="inline-block px-3">
-            <div
-              className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image9.jpg')]">
-            </div>
-          </div>
-          <div className="inline-block px-3">
-            <div
-              className="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image10.jpg')]">
-            </div>
-          </div>
+      <main className='contain-all'>
+        <div>
+          <DropDown />
         </div>
+        <div className="btn-contain">
+          <p className="btn-text" onClick={() => btnTrigger()}>Push this for<strong>&nbsp;Overlay</strong></p>
         </div>
-            <p className="btn-text" onClick={() => btnTrigger()}>recent activity in our gardens, <strong className='text-green-700'>sign up</strong> to add to your own.<strong>&nbsp;</strong></p> 
+        <div className="text-contain">
+          <p><span className="title-span">Introducing a new template for landing pages.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-
-
-        
-
-         
-
         <div id="revealContainer" className="reveal-container">
           <div className="text-contain reveal-text">
             <p>This is an overlay example with a video.  But anything can go here.</p>
@@ -111,7 +45,6 @@ export default function Home() {
             controls
           />
         </div>
-        
       </main >
 
 
