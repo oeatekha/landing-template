@@ -6,6 +6,10 @@ module.exports = {
 
   theme: {
     extend: {},
+    FontFace: {
+      fontFamily: "Inter",
+      src: "url('https://rsms.me/inter/inter.css')",
+    },
   },
   plugins: [],
 }

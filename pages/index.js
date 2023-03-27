@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Menu } from '@headlessui/react'
 import DropDown from '../components/Menu'
 import React, { useEffect } from "react";
+import Tippy from '@tippy.js/react';
 import Link from 'next/link'
 import Script from 'next/script'
 import Image from 'next/image'
@@ -16,6 +17,12 @@ export default function Home() {
     const btn = document.getElementById('revealContainer');
     btn.classList.toggle('active');
   }
+
+  // add tippy hover
+
+
+
+
   return (
     <div className="container">
       <Head>
@@ -29,12 +36,67 @@ export default function Home() {
 
           <div className="text-contain">
             {/*Make the first pollen bolded and yellow in color */}
-            <p><span className="text-yellow-400 font-semibold">Pollen</span> is an organization of scientist, artists, engineers, and designers exploring the intersection of culture and science.</p>
+            <p><span className="font-semibold">grdn</span> is digital infrastructure for socially created content, knowledge, and media.</p>
           </div>
+
           
           <div className="btn-contain">
-            <p className="btn-text" onClick={() => btnTrigger()}>Push this for<strong>&nbsp;Overlay</strong></p>
+          <div
+        class="flex overflow-x-scroll pb-10 hide-scroll-bar"
+      >
+        <div
+          class="flex flex-nowrap "
+        >
+            <div class="inline-block px-3">
+              <div class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image6.jpg')]">
+              </div>
+            </div>
+
+          
+          <div class="inline-block px-3">
+            <div
+            class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image11.jpg')]">
+            </div>
           </div>
+          <div class="inline-block px-3">
+          <div
+            class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image3.jpg')]">
+            </div>
+          </div>
+          <div class="inline-block px-3">
+          <div
+            class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image4.jpg')]">
+            </div>
+          </div>
+          <div class="inline-block px-3">
+            <div
+              class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image2.jpg')]">
+            </div>
+          </div>
+          <div class="inline-block px-3">
+            <div
+              class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image8.jpg')]">
+            </div>
+          </div>
+          <div class="inline-block px-3">
+            <div
+              class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image9.jpg')]">
+            </div>
+          </div>
+          <div class="inline-block px-3">
+            <div
+              class="w-40 h-40 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out bg-cover bg-center bg-[url('/image10.jpg')]">
+            </div>
+          </div>
+        </div>
+        </div>
+            <p className="btn-text" onClick={() => btnTrigger()}>recent activity in our gardens, <strong className='text-green-700'>sign up</strong> to add to your own.<strong>&nbsp;</strong></p> 
+        </div>
+
+
+        
+
+         
 
         <div id="revealContainer" className="reveal-container">
           <div className="text-contain reveal-text">
@@ -49,6 +111,7 @@ export default function Home() {
             controls
           />
         </div>
+        
       </main >
 
 
