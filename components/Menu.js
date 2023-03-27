@@ -5,27 +5,15 @@ import Link from 'next/link'
 
 export default function DropDown() {
     return (
-
-            
-<nav className="bg-white border-gray-200 sm:px-4 py-2 rounded dark:bg-gray-900">
-    <div className="p-4 menu sticky top-0 flex items-center justify-between" >
-            {/*Import pollen logo from public folder name is pollen_logo.svg*/}
-            <div className="flex items-center">
-                <Link href="/">
-                    <a className="flex items-center">
-               
-                        <span className="text-xl font-bold ml-2 text-gray-800 dark:text-white">
-                            grdn
-                        </span>
-                    </a>
-                </Link>
-                
-            </div>
+        <div className="menu fixed top-4 right-10 w-56 text-right z-50">
             <Menu as="div" className="relative inline-block text-left menu-bg">
-                <div className="flex flex-row items-center">
-
-                    <Menu.Button className=" focus:outline-none inline-flex w-full justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-                        Engineerd By Pollen
+                <div>
+                    <Menu.Button className=" focus:outline-none inline-flex w-full justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                        Explore
+                        <ChevronDownIcon
+                            className="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
+                            aria-hidden="true"
+                        />
                     </Menu.Button>
                 </div>
                 <Transition
@@ -53,10 +41,16 @@ export default function DropDown() {
                     </Menu.Items>
                 </Transition>
             </Menu>
-          </div>
-</nav>
+            <style jsx>{`
+@media and (max-width: 768px) {
+.menu {
+    right: 5% !important;
+    text-align: right !important;
+}
 
-
+}
+  `}</style>
+        </div>
     )
 }
 
@@ -281,5 +275,7 @@ function DeleteActiveIcon(props) {
         </svg>
     )
 }
+
+
 
 
