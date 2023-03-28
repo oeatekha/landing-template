@@ -29,7 +29,7 @@ export default function Home() {
 
           <div className="text-contain">
             {/*Make the first pollen bolded and yellow in color */}
-            <p><span className="text-yellow-400 font-semibold">Pollen</span> is an organization of scientist, artists, engineers, and designers exploring the intersection of culture and science.</p>
+            <p><span className="text-yellow-400 font-semibold">Pollen</span> is an organization of scientists, artists, engineers, and designers exploring the intersection of culture and science.</p>
           </div>
           
           <div className="btn-contain">
