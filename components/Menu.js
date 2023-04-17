@@ -7,7 +7,7 @@ export default function DropDown() {
     return (
 
             
-<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2 rounded">
+<nav className="bg-white border-gray-200 px-2 sm:px-4 py-2 rounded">
     <div className="p-4 menu sticky top-0 flex items-center justify-between" >
             {/*Import pollen logo from public folder name is pollen_logo.svg*/}
             <div className="flex items-center">
