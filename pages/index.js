@@ -32,9 +32,6 @@ export default function Home() {
             <p><span className="text-yellow-400 font-semibold">Pollen</span> is an organization of scientists, artists, engineers, and designers exploring the intersection of culture and science.</p>
           </div>
           
-          <div className="btn-contain">
-            <p className="btn-text" onClick={() => btnTrigger()}>Push this for<strong>&nbsp;Overlay</strong></p>
-          </div>
 
         <div id="revealContainer" className="reveal-container">
           <div className="text-contain reveal-text">

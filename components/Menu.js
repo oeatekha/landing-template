@@ -44,14 +44,26 @@ export default function DropDown() {
                 >
                     <Menu.Items className="focus:outline-none absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 menuContent">
                         <div className="px-3 py-3 flex flex-col">
+
                             <Menu.Item>
                                 {({ active }) => (
-                                    <Link href="https://twitter.com/currantts"
-                                        className={`${active ? 'bg-en-blue-500 text-white' : 'text-gray-900'
+                                    <a href="https://twitter.com/pppollen"
+                                        className={`${active ? 'bg-neutral-300 text-white' : 'text-gray-900'
                                             } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                                     >
                                         Twitter
-                                    </Link>
+                                    </a>
+                                )}
+                            </Menu.Item>
+                            
+                            <Menu.Item>
+                                {({ active }) => (
+                                    <a href="mailto: admin@pollen.rs"
+                                        className={`${active ? 'bg-neutral-300 text-white' : 'text-gray-900'
+                                            } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                                    >
+                                        Contact Us
+                                    </a>
                                 )}
                             </Menu.Item>
                         </div>
